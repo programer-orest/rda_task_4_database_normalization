@@ -23,7 +23,7 @@ CREATE TABLE Warehouse(
     PRIMARY KEY (ID)
 );
 
-CREATE TABLE ProductInfo(
+CREATE TABLE ProductInventory(
 	ID INT,
     ProductID INT,
     WarehouseAmount INT,
@@ -48,7 +48,7 @@ INSERT INTO Warehouse(ID, WarehouseName, WarehouseAddress, CountryID)
 	VALUES(2, 'Warehouse-2', 'City-2, Street-2', 2);
 
 
-INSERT INTO ProductInfo(ID, ProductID, WarehouseAmount,WarehouseID)
+INSERT INTO ProductInventory(ID, ProductID, WarehouseAmount,WarehouseID)
 	VALUES(1, 1, 2, 1);
 INSERT INTO ProductInfo(ID, ProductID, WarehouseAmount,WarehouseID)
 	VALUES(2, 1, 5, 2);
